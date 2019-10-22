@@ -1,1 +1,1 @@
-web: gunicorn wards.wsgi --log-file -
+web: gunicorn grammina.wsgi --log-file -
