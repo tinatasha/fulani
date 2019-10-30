@@ -1,1 +1,1 @@
-web: gunicorn grammina.wsgi --log-file -
+web: gunicorn jiranifulani.wsgi --log-file -
