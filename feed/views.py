@@ -66,7 +66,7 @@ def edit_profile(request):
     user_form = UserForm(instance=user)
     
     ProfileInlineFormset = inlineformset_factory(
-        User, UserProfile, fields=("photo", "phone", "bio")
+        User, UserProfile, fields=("photo", "phone", "bio", "general_location", "neighborhood_name")
         )
     formset = ProfileInlineFormset(instance=user)
     
