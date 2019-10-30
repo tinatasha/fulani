@@ -5,6 +5,7 @@
 <head>
 	<meta charset="UFT-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=7">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
 		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -20,25 +21,53 @@
 	<script src="{% static 'js/scripts.js'%}"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Seaweed+Script&display=swap" rel="stylesheet">
 	{% block styles%} {% endblock%}
 </head>
 
 <body style="background-color: black; color:white; text-align: center; vertical-align: middle;">
 	
-		<div style="display: flex; flex-direction: row; margin-left: 0px;" class="row" id="socials">
-			<a href="{% url 'profile'%}">
-				<i class="far fa-user" style="margin: 30px; font-size:30px;"></i>
-			</a>
-			<a href="{% url 'briefcase'%}">
-				<i class="fa fa-briefcase" aria-hidden="true" style="margin: 30px; font-size:30px;"></i>
-			</a>
-			<a href="{% url 'medkit'%}">
-				<i class="fa fa-medkit" aria-hidden="true" style="margin: 30px; font-size:30px;"></i>
-			</a>
-			<a href="{% url 'police'%}">
-				<span class="iconify" data-icon="map-police" data-inline="false"></span>
-			</a>
-	</div>
+		<div>
+			<div>
+					<h1>
+							“
+					</h1>
+
+					<h1 style="font-family: 'Seaweed Script', cursive; font-size: 60px;">We all have neighbors. Greet them on the sidewalk or in the elevator, but try not to peer through their windows. Windows are to look out from, not into.</h1>     
+					
+					<h6>Alexandra Stoddard</h6>
+			</div>
+				<div>
+						<img src="{% static "images/pexels-photo-280221.jpeg" %}" width="1000px" height="600px" alt="My image"/>
+				</div>
+				<div  class="row" id="socials">
+					
+					<div class="col-md-2">
+						
+					</div>
+						<a class="
+						col-md-2" style="color:white;" href="{% url 'profile'%}">
+							<i class="far fa-user" style="margin: 30px; font-size:30px;"></i>
+						</a>
+						<a class="
+						col-md-2" style="color:white;" href="{% url 'briefcase'%}">
+							<i class="fa fa-briefcase" aria-hidden="true" style="margin: 30px; font-size:30px;"></i>
+						</a>
+						<a class="
+						col-md-2" style="color:white;" href="{% url 'medkit'%}">
+							<i class="fa fa-medkit" aria-hidden="true" style="margin: 30px; font-size:30px;"></i>
+						</a>
+						<a class="
+						col-md-2" style="color:white;" href="{% url 'police'%}">
+							<span class="iconify" style="margin: 30px; font-size:30px;" data-icon="map-police" data-inline="false"></span>
+						</a>
+						<div class="col-md-2">
+							
+						</div>
+				</div>
+				
+			
+		</div>
 	
 </body>
 
