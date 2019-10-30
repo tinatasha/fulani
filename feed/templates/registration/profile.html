@@ -26,19 +26,33 @@
 					<br>
 					<br>
 					<br>
+					
+					<p>Your General Location:</p>
+				
+					{{ user_profile.general_location }}
+					<br>
+					<br>
+					<br>
+					<p>Your General Location:</p>
+				
+					{{ user_profile.neighborhood_name }}
+					<br>
+					<br>
+					<br>
 					<p>Your Bio:</p>
 					
 					{{ user_profile.bio}}
 					<br>
 					<br>
 					<br>
-					<p>Your Projects:</p>
+					<p>Your Posts:</p>
 					{% for project in projects%}
 					<a href="{{user_profile.projects}}">Click for a surprise!</a>
 					{% endfor %}
 					<br>
 					<br>
 					<br>
+					
 					<a class="btn btn-primary" href="{% url 'edit_profile'%}">Edit Profile</a>
 					<br>
 					<!-- icons -->
