@@ -19,239 +19,27 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
 	<script src="{% static 'js/scripts.js'%}"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
 	{% block styles%} {% endblock%}
 </head>
 
 <body style="background-color: black; color:white; text-align: center; vertical-align: middle;">
-	<script>
-		function myFunction(x) {
-			x.classList.toggle("fas fa-heart");
-		}
-	</script>
-	<!-- <div class="row">
-		<div style="display: flex; flex-direction: row; margin-left: 20px;" class="col-md-4" id="socials">
-			<i class="far fa-user" style="margin: 30px; font-size:30px;"></i>
-			<br>
-			<i class="fa fa-instagram" style="margin: 30px; font-size:30px;" aria-hidden="true"></i>
-			<br>
-			<i class="fa fa-twitter" style="margin: 30px; font-size:30px;" aria-hidden="true"></i>
-			<br>
-			<i class="fa fa-facebook" style="margin: 30px; font-size:30px;" aria-hidden="true"></i>
-			<br>
-		</div>
-		<div class="col-md-4"></div>
-		<div class="col-md-4">
-			
-		</div>
-	</div> -->
 	
 		<div style="display: flex; flex-direction: row; margin-left: 0px;" class="row" id="socials">
 			<a href="{% url 'profile'%}">
 				<i class="far fa-user" style="margin: 30px; font-size:30px;"></i>
 			</a>
+			<a href="{% url 'briefcase'%}">
+				<i class="fa fa-briefcase" aria-hidden="true" style="margin: 30px; font-size:30px;"></i>
+			</a>
+			<a href="{% url 'medkit'%}">
+				<i class="fa fa-medkit" aria-hidden="true" style="margin: 30px; font-size:30px;"></i>
+			</a>
+			<a href="{% url 'police'%}">
+				<span class="iconify" data-icon="map-police" data-inline="false"></span>
+			</a>
 	</div>
-	<div class="row">
-		<div class="col-md-2"></div>
-		<div style="font-family: 'Lily Script One', cursive; font-size: 200px; font-weight:bold; text-align: center;"
-			id="logo" class="col-md-6">
-			awwwards.
-		</div>
-		<div class="col-md-4"></div>
-	</div>
-	<div id="site_of">
-		<iframe src="https://lagutalaguta.com/" frameborder="100%" height="650px" width="100%"></iframe>
-	</div>
-	<div>
-		<p>
-			Independent creative pair. Our goal is to make easy and effective solutions based on our experience and
-			<br>
-			relevance to your business case.
-		</p>
-	</div>
-	<div>
-		<p>
-			<span style="font-weight: bold; font-family: 'Modak', cursive;">Sites of the day </span>
-			<br>
-			Previous Winners
-		</p>
-	</div>
-	<div>
-		<span style="font-weight: bold; font-family: 'Modak', cursive;">
-			Mobile Excellence
-		</span>
-		<br>
-		Site of the week
-	</div>
-	<div>
-		<div class="row" id="">
-			<div class="col-md-4">
-				<iframe src="https://albandelachaume.fr/" frameborder="0" width="100%" height="400px"></iframe>
-				<p>
-					Nowy Teatr
-					<br>
-					From Poland
-					October 19, 2019
-					<br>
-					BY HUNCWOT
-				</p>
-			</div>
-			<div class="col-md-4">
-				<iframe src="https://www.komarekfoundation.org/en/" frameborder="0" width="100%"
-					height="400px"></iframe>
-				<p>
-					Karel Komárek Family Fdn.
-					<br>
-					From Czech Republic
-					October 20, 2019
-					<br>
-
-					BY CREATIVE NIGHTS
-				</p>
-			</div>
-			<div class="col-md-4">
-				<iframe src="https://www.juliocesar.work/" frameborder="0" width="100%" height="400px"></iframe>
-				<p>
-					Julio Cesar
-					<br>
-					From Brazil
-					October 16, 2019
-					<br>
-					BY JULIO CESAR
-				</p>
-			</div>
-		</div>
-		<div>
-			<span style="font-weight: bold; font-family: 'Modak', cursive;">Nominees</span>
-			<br>
-			We need your vote!
-		</div>
-		<div class="row">
-			<div class="col-md-4">
-				<iframe
-					src="https://readymag.com/?utm_source=awwwards.com&utm_medium=paid&utm_campaign=mainreadymag_awwwards"
-					frameborder="0" width="100%" height="400px"></iframe>
-				<p>
-					Readymag
-					<br>
-					From United States
-					October 18, 2019
-					<br>
-					BY READYMAG
-				</p>
-			</div>
-			<div class="col-md-4">
-				<iframe src="https://editorialnew.com/" frameborder="0" width="100%" height="400px"></iframe>
-				<p>
-					Editorial New
-					<br>
-					From Canada
-					October 21, 2019
-					<br>
-					BY LOCOMOTIVE
-				</p>
-			</div>
-			<div class="col-md-4">
-				<iframe src="https://mirrorball.com/" frameborder="0" width="100%" height="400px"></iframe>
-				<p>
-					Our Place
-					<br>
-					From United States
-					October 18, 2019
-					<br>
-					BY THE COUCH
-				</p>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-4">
-				<iframe src="https://changliu.io/" frameborder="0" width="100%" height="400px"></iframe>
-				<p>
-					Readymag
-					<br>
-					From United States
-					October 18, 2019
-					<br>
-					BY READYMAG
-				</p>
-			</div>
-			<div class="col-md-4">
-				<iframe src="https://2018.14islands.com/" frameborder="0" width="100%" height="400px"></iframe>
-				<p>
-					Editorial New
-					<br>
-					From Canada
-					October 21, 2019
-					<br>
-					BY LOCOMOTIVE
-				</p>
-			</div>
-			<div class="col-md-4">
-				<iframe src="https://routefifty.caffeina.com/" frameborder="0" width="100%" height="400px"></iframe>
-				<p>
-					Our Place
-					<br>
-					From United States
-					October 18, 2019
-					<br>
-					BY THE COUCH
-				</p>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-4">
-				<iframe src="https://albanmezino.fr/" frameborder="0" width="100%" height="400px"></iframe>
-				<p>
-					Readymag
-					<br>
-					From United States
-					October 18, 2019
-					<br>
-					BY READYMAG
-				</p>
-			</div>
-			<div class="col-md-4">
-				<iframe src="https://valentinritz.com/" frameborder="0" width="100%" height="400px"></iframe>
-				<p>
-					Editorial New
-					<br>
-					From Canada
-					October 21, 2019
-					<br>
-					BY LOCOMOTIVE
-				</p>
-			</div>
-			<div class="col-md-4">
-				<iframe src="https://oneiric.space/" frameborder="0" width="100%" height="400px"></iframe>
-				<p>
-					Our Place
-					<br>
-					From United States
-					October 18, 2019
-					<br>
-					BY THE COUCH
-				</p>
-			</div>
-		</div>
-	</div>
-	</div>
-	<div style="margin-top: 50px;">
-		<a href="{% url 'edit_profile'%}">
-			<button style="background-color: Transparent;
-		background-repeat:no-repeat;
-		border: none;
-		cursor:pointer;
-		overflow: hidden;
-		outline:none;
-		color: deeppink;
-		font-size: 50px;
-		border: 2px solid white;
-		border-radius: 35%;">
-			SUBMIT YOUR SITE!
-		</button>
-		</a>
-	</div>
+	
 </body>
 
 </html>
