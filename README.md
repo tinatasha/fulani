@@ -6,7 +6,7 @@ A clone of awwwards.
 
 
 #### Link to deployed site
-
+[Jirani_Fulani app](https://jiranifulani.herokuapp.com/)
 
 ## Table of content
 1. [Description](#description)
