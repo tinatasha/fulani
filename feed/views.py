@@ -17,14 +17,14 @@ def feed(request):
 
 # Create your views here.
 def briefcase(request):
-    return render(request, "briefcase.html", {"images":images})
+    return render(request, "briefcase.html")
 
 # Create your views here.
 def medkit(request):
-    return render(request, "medkit.html", {"images":images})
+    return render(request, "medkit.html")
 
 def police(request):
-    return render(request, "police.html", {"images":images})
+    return render(request, "police.html")
 
 def image_details(request):
     images = Image.objects.all().filter(time__lte=timezone.now())
