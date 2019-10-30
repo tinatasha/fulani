@@ -1,1 +1,1 @@
-web: gunicorn jiranifulani.wsgi --log-file -
+web: gunicorn Jirani_fulani.wsgi --log-file -
